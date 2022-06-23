@@ -15,6 +15,7 @@
 
 <script>
 export default {
+  // eslint-disable-next-line vue/multi-word-component-names
   name: "Products",
 
   data() {
@@ -29,10 +30,10 @@ export default {
 </script>
 
 <style>
-    @import url("https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap");
 
 a {
-   background: #c00;
+  background: #c00;
   padding: 5px;
   color: white;
   border-radius: 10px;
