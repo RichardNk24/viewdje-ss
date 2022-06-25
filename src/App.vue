@@ -1,9 +1,9 @@
 <template>
   <nav id="header">
-    <a href="">HOME</a>
-    <a href="">CONTACT</a>
+    <router-link :to="{ name: 'Home' }">HOME</router-link>
+    <router-link :to="{ name: 'Contact' }">CONTACT</router-link>
   </nav>
-
+  <routerView />
   <section>
     <Home />
   </section>
@@ -11,7 +11,7 @@
 
 <script>
 // import { RouterLink, RouterView } from "vue-router";
-import Home from "./components/Home.vue";
+import Home from "./views/Home.vue";
 
 export default {
   name: "App",
