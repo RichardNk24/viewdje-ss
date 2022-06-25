@@ -2,10 +2,6 @@
   <div class="intro"></div>
   <div class="product-menu">
     <Products />
-    <Products />
-    <Products />
-    <Products />
-    <Products />
   </div>
 </template>
 
