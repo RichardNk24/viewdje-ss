@@ -1,23 +1,29 @@
 <template>
   <div class="intro"></div>
-  <div class="product-menu"></div>
+  <div class="product-menu">
+    <Products />
+    <Products />
+    <Products />
+    <Products />
+    <Products />
+  </div>
 </template>
 
 <script>
+import Products from "./Products.vue";
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Home",
   data() {
     return {};
   },
-
   methods: {},
-
   computed: {},
+  components: { Products },
 };
 </script>
 
-<style>
+<style scoped>
 #intro {
   background-image: url(../assets/images/pizza-menu.jpg);
   background-position: bottom;

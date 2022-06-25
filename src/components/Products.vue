@@ -1,17 +1,16 @@
 <template>
-    <article v-for="(type, index) in types" :key="index">
+  <article v-for="(type, index) in types" :key="index">
     <div class="product-img"></div>
     <div class="product-description">
-        <h3>Pizza {{ type }}</h3>
-        <p>Prix : {{ price }} €</p>
-        <p>{{ ingredients }}</p>
-        <router-link :to="{ name: 'product-details', params: { name: type } }">
-            Commander >>
-        </router-link>
+      <h3>Pizza {{ type }}</h3>
+      <p>Prix : {{ price }} €</p>
+      <p>{{ ingredients }}</p>
+      <router-link :to="{ name: 'product-details', params: { name: type } }">
+        Commander >>
+      </router-link>
     </div>
-    </article>
+  </article>
 </template>
-
 
 <script>
 export default {
@@ -29,7 +28,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap");
 
 a {
