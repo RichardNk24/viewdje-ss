@@ -1,25 +1,30 @@
 <template>
-  <div class="intro"></div>
-  <div class="product-menu">
+  <div id="intro">
+    <p>Bienvenue !</p>
+    <p>PROMOTION SUR LA 4 FROMAGE</p>
+    <p>NOUVEAUTE - PIZZA ROYALE</p>
+    <p>JEU CONCOURS</p>
+  </div>
+  <div id="product-menu">
     <Products />
   </div>
 </template>
 
 <script>
-import Products from "../components/Products.vue";
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Home",
   data() {
     return {};
   },
+
   methods: {},
+
   computed: {},
-  components: { Products },
 };
 </script>
 
-<style scoped>
+<style>
 #intro {
   background-image: url(../assets/images/pizza-menu.jpg);
   background-position: bottom;

@@ -115,19 +115,19 @@ export default {
       notAvailable: false,
       sauces: [
         {
-        id: 1001,
-        type: "Sauce Tomate",
-        color: "#db4006",
-        image: require("../assets/images/pizza1-tomate.jpg")
+          id: 1001,
+          type: "Sauce Tomate",
+          color: "#db4006",
+          image: require("../assets/images/pizza1-tomate.jpg")
         },
         {
-        id: 1002,
-        type: "Crème Fraiche",
-        color: "#e9cb8f",
-        image: require("../assets/images/pizza1-creme.jpg")
+          id: 1002,
+          type: "Crème Fraiche",
+          color: "#e9cb8f",
+          image: require("../assets/images/pizza1-creme.jpg")
         }
-        ],
-        ingredients: [
+      ],
+      ingredients: [
         "Olives",
         "Poulet roti",
         "Bacon",
@@ -135,19 +135,19 @@ export default {
         "Champignons",
         "Mozzarella",
         "Oeuf"
-        ],
-        energy: {
+      ],
+      energy: {
         Kcal: 242,
         Glucides: 27.99,
         Fibres: 1.75,
         Proteines: 9.62,
         Sel: 11
-        },
-        totalPrice: 0,
-        nbrProduct: 0,
-        promo: ""
+      },
+      totalPrice: 0,
+      nbrProduct: 0,
+      promo: ""
     };
-    },
+  },
 
   methods: {
     addProduct() {
