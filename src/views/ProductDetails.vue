@@ -88,7 +88,6 @@
             </li>
           </ul>
         </div>
-
         <!-- Bouton d'ajout au panier -->
         <button
           v-bind:class="{ notActiveBtn: notAvailable }"
@@ -110,6 +109,7 @@ export default {
     return {
       product: "Pizza",
       price: 12,
+      // eslint-disable-next-line no-undef
       img: require("../assets/images/pizza1-tomate.jpg"),
       sale: false,
       notAvailable: false,
@@ -118,14 +118,16 @@ export default {
           id: 1001,
           type: "Sauce Tomate",
           color: "#db4006",
+          // eslint-disable-next-line no-undef
           image: require("../assets/images/pizza1-tomate.jpg")
         },
         {
           id: 1002,
           type: "Crème Fraiche",
           color: "#e9cb8f",
+          // eslint-disable-next-line no-undef
           image: require("../assets/images/pizza1-creme.jpg")
-        }
+        },
       ],
       ingredients: [
         "Olives",
@@ -148,7 +150,6 @@ export default {
       promo: ""
     };
   },
-
   methods: {
     addProduct() {
       if (this.sale) {
